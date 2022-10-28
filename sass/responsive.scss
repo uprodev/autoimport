@@ -536,6 +536,11 @@
   }
   .services{
     padding-bottom: 20px;
+
+    .content-width{
+      width: calc(100% - 30px);
+      padding-top: 20px;
+    }
   }
 }
 

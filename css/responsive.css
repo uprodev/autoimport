@@ -528,7 +528,10 @@
     padding-top: 35px; }
 
   .services {
-    padding-bottom: 20px; } }
+    padding-bottom: 20px; }
+    .services .content-width {
+      width: calc(100% - 30px);
+      padding-top: 20px; } }
 @media (max-width: 374px) {
   .types-equipment .slider-wrap, .auto-usa .slider-wrap, .default-slider, .about .slider-wrap, .testimonials .slider-wrap {
     width: 290px; }
