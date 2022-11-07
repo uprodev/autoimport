@@ -255,13 +255,13 @@ input, textarea, button {
         right: 0;
         content: '';
         height: 2px;
-        background: #eee;
+        background: #3b3b3b;
         -webkit-transform: scaleX(0);
                 transform: scaleX(0);
         -webkit-transition: all .4s ease;
         transition: all .4s ease; }
       .top-line .tel-wrap a:hover {
-        color: #eeeeee; }
+        color: #3b3b3b; }
         .top-line .tel-wrap a:hover:after {
           -webkit-transform: scaleX(1);
                   transform: scaleX(1); }
@@ -980,7 +980,14 @@ ul.point-list {
       margin-left: -15px;
       height: 190px;
       margin-bottom: 10px;
-      overflow: hidden; }
+      overflow: hidden;
+      /*&:hover{
+        img{
+          transform: scale(1.02);
+        }
+      }*/ }
+      .auto-usa .auto-slider figure a {
+        pointer-events: none; }
       .auto-usa .auto-slider figure img {
         width: 100%;
         height: 100%;
@@ -988,9 +995,6 @@ ul.point-list {
            object-fit: cover;
         -webkit-transition: all .4s ease;
         transition: all .4s ease; }
-      .auto-usa .auto-slider figure:hover img {
-        -webkit-transform: scale(1.02);
-                transform: scale(1.02); }
     .auto-usa .auto-slider h6 {
       color: #000000;
       font-size: 20px;
@@ -1208,7 +1212,8 @@ ul.point-list {
   width: 100%;
   height: 170px;
   position: relative;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  overflow: hidden; }
   .auto-way-slider figure .video-wrap {
     width: 100%;
     height: 100%; }
@@ -1267,12 +1272,17 @@ ul.point-list {
       .auto-way-slider figure .video-wrap .bg-img img {
         width: 100%;
         height: 100%;
+        -webkit-transition: all .4s ease;
+        transition: all .4s ease;
         -o-object-fit: cover;
            object-fit: cover; }
+  .auto-way-slider figure:hover .bg-img img {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); }
 .auto-way-slider .text-wrap {
   position: relative;
   padding: 0 15px 50px;
-  min-height: 240px; }
+  min-height: 300px; }
   .auto-way-slider .text-wrap p {
     margin-bottom: 10px; }
   .auto-way-slider .text-wrap p.data {
@@ -2005,5 +2015,130 @@ input.error {
 
 .delivery .info-list li {
   text-align: center; }
+
+.admin-show-head {
+  margin: 30px 0 30px; }
+  .admin-show-head .content {
+    background: #fff;
+    border-radius: 20px;
+    width: 800px;
+    margin: auto;
+    border: 1px solid #b5b4b4;
+    overflow: hidden; }
+    .admin-show-head .content .title {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      background: #eee;
+      border-bottom: 1px solid #b5b4b4;
+      margin-bottom: -1px;
+      padding: 20px 30px; }
+      .admin-show-head .content .title a {
+        color: blue;
+        font-size: 16px; }
+        .admin-show-head .content .title a i {
+          margin-left: 10px; }
+    .admin-show-head .content .wrap {
+      display: none;
+      background: #fff;
+      padding: 30px; }
+      .admin-show-head .content .wrap p {
+        text-align: center;
+        margin-bottom: 20px; }
+      .admin-show-head .content .wrap ul {
+        background: #95e095;
+        border: 1px solid #eee;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 30px; }
+        .admin-show-head .content .wrap ul li {
+          min-height: 30px;
+          padding: 10px 20px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          border-bottom: 1px solid #eee; }
+          .admin-show-head .content .wrap ul li p {
+            margin: 0;
+            text-align: left; }
+        .admin-show-head .content .wrap ul li:last-child {
+          border-bottom: 0; }
+      .admin-show-head .content .wrap .btn-wrap {
+        text-align: center; }
+
+section .edit-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 99;
+  top: 10px;
+  right: 10px;
+  opacity: 0.6;
+  color: red;
+  font-size: 12px;
+  background: #000; }
+  section .edit-slider:hover {
+    opacity: 1; }
+
+.default-slider-testimonials .nav-wrap {
+  margin-left: -20px; }
+
+.form-default .input-wrap-check, .form-quiz .input-wrap-check {
+  margin-bottom: 15px; }
+  .form-default .input-wrap-check input, .form-quiz .input-wrap-check input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden; }
+  .form-default .input-wrap-check label, .form-quiz .input-wrap-check label {
+    display: block; }
+    .form-default .input-wrap-check label span, .form-quiz .input-wrap-check label span {
+      display: block;
+      position: relative;
+      padding-left: 30px;
+      cursor: pointer; }
+      .form-default .input-wrap-check label span:after, .form-quiz .input-wrap-check label span:after {
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #838383;
+        border-radius: 3px;
+        content: '';
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box; }
+    .form-default .input-wrap-check label input:checked + span:before, .form-quiz .input-wrap-check label input:checked + span:before {
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      top: 6px;
+      left: 4px;
+      content: '';
+      background-color: #19ba75; }
+    .form-default .input-wrap-check label input:checked + span:after, .form-quiz .input-wrap-check label input:checked + span:after {
+      border-color: #19ba75; }
+
+.form-quiz .input-wrap-check {
+  margin-top: 20px; }
 
 /*# sourceMappingURL=styles.css.map */

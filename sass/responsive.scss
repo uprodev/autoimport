@@ -217,9 +217,18 @@
   }
 }
 
+@media (max-width:1100px){
+  .content-width{
+    width: 860px;
+  }
+}
+
 @media (max-width:991px) {
   .content-width{
     width: 720px;
+  }
+  .admin-show-head .content{
+    width: 100%;
   }
   h2{
     font-size: 30px;
@@ -541,6 +550,9 @@
       width: calc(100% - 30px);
       padding-top: 20px;
     }
+  }
+  .form-default .input-wrap-check label span, .form-quiz .input-wrap-check label span{
+    font-size: 15px;
   }
 }
 
