@@ -679,7 +679,7 @@ input, textarea, button {
     width: 100%;
     background: transparent; }
   .popup-quiz .swiper-slide {
-    min-height: 300px; }
+    min-height: 200px; }
 
 .popup-quiz.is-complete .nav-wrap .btn-submit {
   display: -webkit-box;
@@ -1282,7 +1282,7 @@ ul.point-list {
 .auto-way-slider .text-wrap {
   position: relative;
   padding: 0 15px 50px;
-  min-height: 300px; }
+  min-height: 215px; }
   .auto-way-slider .text-wrap p {
     margin-bottom: 10px; }
   .auto-way-slider .text-wrap p.data {
@@ -1452,7 +1452,7 @@ ul.point-list {
     text-align: center; }
 
 .list-check {
-  margin-bottom: 30px;
+  margin-bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2140,5 +2140,17 @@ section .edit-slider {
 
 .form-quiz .input-wrap-check {
   margin-top: 20px; }
+
+.auto-usa .slider-wrapr {
+  background: transparent; }
+
+.form-default .input-wrap-check label span:after, .form-quiz .input-wrap-check label span:after {
+  top: 12px; }
+
+.form-default .input-wrap-check label input:checked + span:before, .form-quiz .input-wrap-check label input:checked + span:before {
+  top: 16px; }
+
+.popup-quiz .swiper-slide .select-block {
+  padding-bottom: 20px; }
 
 /*# sourceMappingURL=styles.css.map */

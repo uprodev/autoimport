@@ -554,12 +554,59 @@
   .form-default .input-wrap-check label span, .form-quiz .input-wrap-check label span{
     font-size: 15px;
   }
+  .home-banner{
+    padding: 30px 0 30px;
+  }
+  .info-buy .content .item:nth-child(7) figure img{
+    object-fit: cover;
+  }
+  .info-buy .content .item:nth-child(7) figure{
+    padding: 0 30px;
+  }
+  .info-buy .content .item:first-child{
+    border-radius: 10px 10px 0 0;
+  }
+  .auto-usa .slider-wrap, .auto-usa .auto-slider{
+    background: transparent;
+  }
+  .auto-usa .auto-slider .wrap{
+    background: #fff;
+    border-radius: 0;
+  }
+  .default-slider{
+    width: 100%;
+    padding: 0 5px;
+  }
+  .list-check li{
+    padding: 0 0 0 40px;
+    text-align: left;
+  }
+  .list-check li:before{
+    left: 0;
+    transform: none;
+    top: -5px;
+  }
+  .services .btn-wrap a{
+    width: 100%;
+  }
+  .services .content-width{
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .total-cost {
+    padding: 75px 0 40px;
+  }
+  .testimonials .testimonials-slider {
+    padding: 10px 5px;
+  }
+  .about .slider-wrap{
+    width: 100%;
+    padding: 0 5px;
+  }
 }
 
 @media(max-width: 374px){
-  .types-equipment .slider-wrap, .auto-usa .slider-wrap, .default-slider, .about .slider-wrap, .testimonials .slider-wrap{
-    width: 290px;
-  }
+
   .top-line .logo {
     margin-right: 10px;
   }
