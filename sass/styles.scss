@@ -1603,7 +1603,7 @@ ul.point-list{
     width: 33.33%;
     text-align: center;
     margin-bottom: 40px;
-    &:before{
+    &:before, span{
       position: absolute;
       top: 0;
       left: 50%;
@@ -1620,6 +1620,16 @@ ul.point-list{
       justify-content: center;
       align-items: center;
       transform: translate(-50%, 0);
+
+    }
+    span{
+      img{
+        width: 20px;
+        filter: invert(1);
+      }
+    }
+    &:before{
+      display: none;
     }
   }
 }
@@ -2326,4 +2336,16 @@ section{
 }
 .popup-quiz .swiper-slide .select-block{
   padding-bottom: 20px;
+}
+
+.form-default .input-wrap-check label span:after, .form-quiz .input-wrap-check label span:after{
+  top: 0;
+}
+
+.call-back .content{
+  margin: auto;
+}
+.info-buy .content{
+  border-radius: 10px;
+  overflow: hidden;
 }

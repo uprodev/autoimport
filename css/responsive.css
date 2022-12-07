@@ -570,7 +570,7 @@
     padding: 0 0 0 40px;
     text-align: left; }
 
-  .list-check li:before {
+  .list-check li:before, .list-check li span {
     left: 0;
     -webkit-transform: none;
             transform: none;
@@ -591,7 +591,42 @@
 
   .about .slider-wrap {
     width: 100%;
-    padding: 0 5px; } }
+    padding: 0 5px; }
+
+  .home-banner .btn-wrap a {
+    width: 100%; }
+
+  .home-banner .btn-wrap {
+    padding: 0 10px; }
+
+  .types-equipment .slider-wrap {
+    width: 100%; }
+
+  .auto-usa .slider-wrap {
+    width: 100%;
+    padding: 0; }
+
+  .services .btn-wrap a {
+    height: 46px;
+    line-height: 46px; }
+
+  .total-cost .btn-wrap a {
+    width: 100%; }
+
+  .about .line .right .item:first-child figure img, .about .line .right .item:nth-child(2) figure img {
+    position: relative;
+    top: -5px; }
+
+  .testimonials .slider-wrap {
+    width: 100%;
+    padding: 0; }
+
+  .testimonials .testimonials-slider {
+    padding: 0; }
+
+  .testimonials .testimonials-slider .swiper-slide {
+    -webkit-box-shadow: none;
+            box-shadow: none; } }
 @media (max-width: 374px) {
   .top-line .logo {
     margin-right: 10px; }

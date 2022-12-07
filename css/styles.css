@@ -1470,7 +1470,7 @@ ul.point-list {
     width: 33.33%;
     text-align: center;
     margin-bottom: 40px; }
-    .list-check li:before {
+    .list-check li:before, .list-check li span {
       position: absolute;
       top: 0;
       left: 50%;
@@ -1494,6 +1494,12 @@ ul.point-list {
               align-items: center;
       -webkit-transform: translate(-50%, 0);
               transform: translate(-50%, 0); }
+    .list-check li span img {
+      width: 20px;
+      -webkit-filter: invert(1);
+              filter: invert(1); }
+    .list-check li:before {
+      display: none; }
 
 /*----------------------END-SERVICES-------------------------------*/
 /*----------------------TOTAL-COST------------------------------*/
@@ -2152,5 +2158,15 @@ section .edit-slider {
 
 .popup-quiz .swiper-slide .select-block {
   padding-bottom: 20px; }
+
+.form-default .input-wrap-check label span:after, .form-quiz .input-wrap-check label span:after {
+  top: 0; }
+
+.call-back .content {
+  margin: auto; }
+
+.info-buy .content {
+  border-radius: 10px;
+  overflow: hidden; }
 
 /*# sourceMappingURL=styles.css.map */
