@@ -1282,7 +1282,7 @@ ul.point-list {
 .auto-way-slider .text-wrap {
   position: relative;
   padding: 0 15px 50px;
-  min-height: 215px; }
+  min-height: 230px; }
   .auto-way-slider .text-wrap p {
     margin-bottom: 10px; }
   .auto-way-slider .text-wrap p.data {
@@ -1971,7 +1971,8 @@ label.error {
   padding-top: 3px !important;
   -webkit-transform: none !important;
           transform: none !important;
-  line-height: 1 !important; }
+  line-height: 1 !important;
+  opacity: 0.5; }
 
 input.error {
   border-color: red !important; }
@@ -2133,16 +2134,16 @@ section .edit-slider {
         content: '';
         -webkit-box-sizing: border-box;
                 box-sizing: border-box; }
-    .form-default .input-wrap-check label input:checked + span:before, .form-quiz .input-wrap-check label input:checked + span:before {
-      width: 12px;
-      height: 12px;
-      position: absolute;
-      top: 6px;
-      left: 4px;
-      content: '';
-      background-color: #19ba75; }
-    .form-default .input-wrap-check label input:checked + span:after, .form-quiz .input-wrap-check label input:checked + span:after {
-      border-color: #19ba75; }
+  .form-default .input-wrap-check .is-active span:before, .form-quiz .input-wrap-check .is-active span:before {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    content: '';
+    background-color: #19ba75; }
+  .form-default .input-wrap-check .is-active span:after, .form-quiz .input-wrap-check .is-active span:after {
+    border-color: #19ba75; }
 
 .form-quiz .input-wrap-check {
   margin-top: 20px; }
@@ -2168,5 +2169,20 @@ section .edit-slider {
 .info-buy .content {
   border-radius: 10px;
   overflow: hidden; }
+
+.form-default .input-wrap-check, .form-quiz .input-wrap-check {
+  position: relative; }
+  .form-default .input-wrap-check .error, .form-quiz .input-wrap-check .error {
+    position: absolute !important;
+    top: inherit !important;
+    bottom: -7px !important; }
+
+.form-default .input-wrap-check .is-active span:before, .form-quiz .input-wrap-check .is-active span:before {
+  top: 4px; }
+
+.auto-way-slider .text-wrap .btn-default {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0; }
 
 /*# sourceMappingURL=styles.css.map */

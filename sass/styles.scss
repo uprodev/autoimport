@@ -1412,7 +1412,7 @@ ul.point-list{
   .text-wrap{
     position: relative;
     padding: 0 15px 50px;
-    min-height: 215px;
+    min-height: 230px;
     p{
       margin-bottom: 10px;
     }
@@ -2124,6 +2124,7 @@ label.error{
   padding-top: 3px!important;
   transform: none!important;
   line-height: 1!important;
+  opacity: 0.5;
 }
 input.error{
   border-color: red!important;
@@ -2301,6 +2302,11 @@ section{
         }
       }
       input:checked + span{
+
+      }
+    }
+    .is-active{
+      span{
         &:before{
           width: 12px;
           height: 12px;
@@ -2348,4 +2354,24 @@ section{
 .info-buy .content{
   border-radius: 10px;
   overflow: hidden;
+}
+
+
+.form-default .input-wrap-check, .form-quiz .input-wrap-check{
+  position: relative;
+  .error{
+    position: absolute!important;
+    top: inherit!important;
+    bottom: -7px!important;
+  }
+}
+
+.form-default .input-wrap-check .is-active span:before, .form-quiz .input-wrap-check .is-active span:before{
+  top: 4px;
+}
+
+.auto-way-slider .text-wrap .btn-default{
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
 }

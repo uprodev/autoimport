@@ -1,7 +1,13 @@
 jQuery(document).ready(function ($) {
 
 
-
+  $(document).on('click', '.form-default .input-wrap-check input, .form-quiz .input-wrap-check input', function (e){
+    if($(this).prop('checked')) {
+      $(this).closest('label').addClass('is-active');
+    } else{
+      $(this).closest('label').removeClass('is-active');
+    }
+  });
 
   /*scroll to block*/
   $(document).on('click', '.scroll', function (e) {
@@ -544,6 +550,9 @@ jQuery(document).ready(function ($) {
         minlength: 14,
         required: true,
       },
+      check2: {
+        required: true,
+      },
     },
     messages: {
       nameTel:{
@@ -554,7 +563,9 @@ jQuery(document).ready(function ($) {
         minlength: "Ведите свой телефон",
         required: "Заполните это поле",
       },
-
+      check2: {
+        required: "Поле не отмечено",
+      },
     }
   });
 
