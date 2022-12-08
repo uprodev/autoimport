@@ -2160,9 +2160,9 @@ section .edit-slider {
 .popup-quiz .swiper-slide .select-block {
   padding-bottom: 20px; }
 
-.form-default .input-wrap-check label span:after, .form-quiz .input-wrap-check label span:after {
-  top: 0; }
-
+/*.form-default .input-wrap-check label span:after{
+  top: 0;
+}*/
 .call-back .content {
   margin: auto; }
 
