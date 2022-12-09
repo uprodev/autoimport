@@ -2375,3 +2375,10 @@ section{
   text-align: center;
   margin: 10px 0;
 }
+
+.form-default .input-wrap-check label span:after, .form-quiz .input-wrap-check label span:after{
+  top: calc(50% - 10px);
+}
+.form-default .input-wrap-check label input:checked + span:before, .form-quiz .input-wrap-check label input:checked + span:before{
+  top: calc(50% - 6px);
+}
