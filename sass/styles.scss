@@ -2382,3 +2382,17 @@ section{
 .form-default .input-wrap-check label input:checked + span:before, .form-quiz .input-wrap-check label input:checked + span:before{
   top: calc(50% - 6px);
 }
+
+
+.testimonials{
+  .auto-way-slider .text-wrap{
+    padding: 0 15px 135px;
+  }
+}
+.testimonials .auto-way-slider .text-wrap .stars-wrap{
+  left: 15px;
+  right: 15px;
+  .btn-default{
+    width: 100%;
+  }
+}
